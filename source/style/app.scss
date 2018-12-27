@@ -274,7 +274,7 @@ input::-ms-clear {
     display: none;
 }
 
-b{
+b {
     font-weight: bold;
     color: #000;
 }
@@ -403,7 +403,8 @@ b{
         padding: 10px 40px;
         background-color: #ffd679;
         font-weight: bold;
-    } 
+    }
+
     &__date {
         color: #f7420b;
         display: inline-block;
@@ -429,13 +430,14 @@ b{
         margin-bottom: 15px;
         margin-left: auto;
         margin-right: auto;
+
         &::before {
             content: '';
             display: block;
             position: absolute;
             background-size: contain;
             background-repeat: no-repeat;
-            
+
             left: 18px;
             top: 50%;
             transform: translateY(-50%);
@@ -447,6 +449,7 @@ b{
         height: 26px;
         width: 20px;
     }
+
     &__label-tel::before {
         background-image: url(../img/phone-icon.svg);
         height: 26px;
@@ -465,13 +468,14 @@ b{
 
     &__input::placeholder {
         color: #202020;
-        font-size: 17px;  
+        font-size: 17px;
     }
 
     &__secure {
         padding-left: 30px;
         position: relative;
         text-align: left;
+
         &::before {
             content: '';
             display: block;
@@ -491,48 +495,52 @@ b{
 
 
 .price {
+    display: flex;
+    text-align: center;
+
+    &__title {
+        font-size: 13px;
+    }
+
+    &__currency {
+        font-size: 14px;
+    }
+
+    &__old,
+    &__new {
+        min-width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__value {
         display: flex;
-        text-align: center;
-        
-        &__title {
-            font-size: 13px;
-        }
-        &__currency {
-            font-size: 14px;
-        }
+        flex-direction: column;
+    }
 
-        &__old,
-        &__new {
-            min-width: 40%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        &__value {
-            display: flex;
-            flex-direction: column;
-        }
+    &__number {
+        font-size: 40px;
+    }
 
-        &__number {
-            font-size: 40px;
-        }
+    &__old .price__value {
+        position: relative;
 
-        &__old .price__value {
-            position: relative;
-            &::before {
-                content: '';
-                display: block;
-                position: absolute;
-                height: 2px;
-                width: 100%;
-                background-color: #f7420b;
-                top: 20px;
-                transform: rotate(15deg);
-            }
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: #f7420b;
+            top: 20px;
+            transform: rotate(15deg);
         }
-        &__new .price__number {
-            color: #87b136;
-            font-weight: bold;
-        }
+    }
+
+    &__new .price__number {
+        color: #87b136;
+        font-weight: bold;
+    }
 }
 
 
@@ -543,14 +551,28 @@ b{
     margin-right: auto;
     justify-content: center;
     align-items: center;
-    height: 67px;
+    font-weight: 700;
+    color: #fff;
     width: 220px;
     border-radius: 67px;
     border: none;
-    
+    width: 220px;
+    height: 73px;
+    box-shadow: inset 0 0 10px rgba(247, 207, 123, 0.48);
+    line-height: 22px;
+    background-image: linear-gradient(to right, #82aa34 0%, #82aa34 1%, #8db838 50%, #82aa34 100%);
+    border-bottom: 5px solid #749c27;
+    padding-top: 3px;
     &__small {
         font-size: 17px;
         display: block;
     }
+
+    &:hover {
+        box-shadow: inset 0 0 4px rgba(247, 207, 123, 0.48);
+        background-color: #008064;
+        background-image: linear-gradient(to right, #c2df89 0%, #c2df89 1%, #8db838 50%, #c0dc88 100%);
+    }
 }
+
 // end form
