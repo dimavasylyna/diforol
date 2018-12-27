@@ -4,16 +4,32 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 0;
-	padding-top: 41px;
+	padding-top: 39px;
+	position: relative;
+
+	&::after {
+		content: "";
+	    position: absolute;
+	    left: 50%;
+	    
+	    transform: translate(-50%) rotate(180deg);
+	    bottom: 0;
+	    height: 20px;
+	    width: 2660px;
+	    background: url(../img/before-bg.svg) no-repeat center;
+	    z-index: 0;
+	}
+
 
 	.container {
 		position: relative;
+		padding-bottom: 74px;
 	}
 
 	&__links {
 		display: flex;
 		justify-content: flex-start;
-		margin-bottom: 50px;
+		margin-bottom: 54px;
 	}
 	&__link {
 		padding-left: 50px;
@@ -34,6 +50,18 @@
 			background-size: contain;
 			background-repeat: no-repeat;
 		}
+
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 94%;
+			width: 1px;
+			background-color: #b1d7e4;
+			right: 44px;
+			top: 3px;
+		}
+
 	}
 
 	&__link-1 {
@@ -64,16 +92,26 @@
 		background-image: url(../img/header__link-3.png);
 	}
 
+	&__link-2::after {
+		right: -47px;
+	}
+
+	&__link-3::after {
+		display: none;
+	}
+
 	&__dashed {
 		display: inline-block;
-		line-height: 1;
+		line-height: 1.1;
 		border-bottom: 1px dashed #83969d;
 		width: auto;
-		margin-bottom: 3px;
+		margin-top: 3px;
+
 	}
 
 	&__link a:hover &__dashed {
 		border-bottom: none;
+		
 	}
 
 	&__flex {
@@ -81,7 +119,7 @@
 	}
 
 	&__about {
-		max-width: 400px;
+		max-width: 460px;
 	}
 
 	&__name-prod {
@@ -149,26 +187,75 @@
 
 	&__img {
 		position: relative;
-		height: 700px;
-		width: 430px;
+		height: 470px;
+		width: 370px;
+		align-self: flex-end;
+		z-index: 10;
+	
+	}
+	&__prod {
+		position: absolute;
+		height: auto;
+		width: 329px;
+		top: 170px;
+		left: -28px;
 	}
 
 	&__woman {
+		height: auto;
+		width: 554px;
 		position: absolute;
-		bottom: 0;
+		bottom: 19px;
 		left: 59%;
 		transform: translateX(-50%);
+		z-index: 0;
 	}
 
-	&__prod {
+	.form {
+		margin-top: 10px;
+	}
+
+	.form__pay-after {
 		position: absolute;
+		bottom: -160px;
+		right: 0;
+		text-align: left;
+		background-color: #fff2d4;
+		font-size: 18px;
+		font-weight: 500;
+		color: #202020;
+		line-height: 1.16;
+		width: 303px;
+		display: flex;
+		align-items: center;
+		min-height: 56px;
+		padding-left: 91px;
+		padding-right: 40px;
+		border-radius: 30px;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 31px;
+			height: 42px;
+			width: 42px;
+			background-image: url(../img/form__pay-after.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		
 	}
-
-
 
 }
 
 
+// media
+
+@media all and (max-width: 1200px) {
+	.header {
+		
+	}
+}
 
 
 
