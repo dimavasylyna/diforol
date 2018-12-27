@@ -380,3 +380,173 @@ input::-ms-clear {
         padding: 25px 0;
     }
 }
+
+
+
+// form
+.form {
+    height: auto;
+    width: 278px;
+    margin-left: auto;
+    color: #444;
+    background-color: #fff;
+    text-align: center;
+    align-self: flex-start;
+
+    &__head {
+        font-size: 19px;
+        color: #222;
+        padding: 10px 40px;
+        background-color: #ffd679;
+        font-weight: bold;
+    } 
+    &__date {
+        color: #f7420b;
+        display: inline-block;
+
+    }
+
+    &__lastpack {
+        font-size: 18px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__count {
+        color: #f7420b;
+        font-weight: 800;
+    }
+
+    &__label {
+        width: 220px;
+        position: relative;
+        display: block;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__label-name::before {
+        background-image: url(../img/user-icon.svg);
+        height: 26px;
+        width: 20px;
+    }
+    &__label-tel::before {
+        background-image: url(../img/phone-icon.svg);
+        height: 26px;
+        width: 24px;
+    }
+
+    &__input {
+        padding: 20px;
+        padding-left: 55px;
+        border-radius: 50px;
+        border: 1px solid #d9dadc;
+        box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.05);
+        width: 100%;
+
+    }
+
+    &__input::placeholder {
+        color: #202020;
+        font-size: 17px;  
+    }
+
+    &__secure {
+        padding-left: 30px;
+        position: relative;
+        text-align: left;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background-image: url(../img/secure-icon.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+}
+
+
+.price {
+        display: flex;
+        text-align: center;
+        
+        &__title {
+            font-size: 13px;
+        }
+        &__currency {
+            font-size: 14px;
+        }
+
+        &__old,
+        &__new {
+            min-width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__value {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__number {
+            font-size: 40px;
+        }
+
+        &__old .price__value {
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                background-color: #f7420b;
+                top: 20px;
+                transform: rotate(15deg);
+            }
+        }
+        &__new .price__number {
+            color: #87b136;
+            font-weight: bold;
+        }
+}
+
+
+.btn {
+    font-size: 30px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    height: 67px;
+    width: 220px;
+    border-radius: 67px;
+    border: none;
+    
+    &__small {
+        font-size: 17px;
+        display: block;
+    }
+}
+// end form

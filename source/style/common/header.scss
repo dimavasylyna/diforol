@@ -1,0 +1,174 @@
+.header {
+	background-color: #a9daea;
+	background-image: url(../img/header-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	padding-top: 41px;
+
+	.container {
+		position: relative;
+	}
+
+	&__links {
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 50px;
+	}
+	&__link {
+		padding-left: 50px;
+		position: relative;
+		font-size: 17px;
+		color: #444;
+		max-width: 370px;
+		display: flex;
+		align-items: center;
+
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__link-1 {
+		margin-right: 33px;
+	}
+
+	&__link-2 {
+		margin-right: 115px;
+	}
+
+	&__link-3 {
+		padding-left: 58px;
+	}
+
+	&__link-1::before {
+		width: 34px;
+		height: 37px;
+		background-image: url(../img/header__link-1.png);
+	}
+	&__link-2::before {
+		width: 38px;
+		height: 38px;
+		background-image: url(../img/header__link-2.png);
+	}
+	&__link-3::before {
+		width: 41px;
+		height: 33px;
+		background-image: url(../img/header__link-3.png);
+	}
+
+	&__dashed {
+		display: inline-block;
+		line-height: 1;
+		border-bottom: 1px dashed #83969d;
+		width: auto;
+		margin-bottom: 3px;
+	}
+
+	&__link a:hover &__dashed {
+		border-bottom: none;
+	}
+
+	&__flex {
+		display: flex;
+	}
+
+	&__about {
+		max-width: 400px;
+	}
+
+	&__name-prod {
+		font-size: 39px;
+	}
+
+	&__title {
+		font-size: 50px;
+		font-weight: 900;
+		color: #202020;
+		margin-top: 19px;
+		line-height: 0.92;
+	}
+	&__subtitle {
+		font-size: 21px;
+		color: #444;
+		line-height: 1.34;
+		margin-top: 18px;
+		max-width: 336px;
+	}
+
+	&__list {
+		margin-top: 51px;
+	}
+
+	&__list li {
+		position: relative;
+		padding-left: 50px;
+		font-size: 20px;
+		color: #444;
+		line-height: 1.14;
+		margin-bottom: 22px;
+
+		b {
+			color: #202020;
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: -10px;
+		}
+		&::before {
+			
+			height: 34px;
+			width: 34px;
+			border-radius: 50%;
+			background-color: #edb440;
+			box-shadow: 0px 3px 7px rgba(176, 186, 104, 0.15);
+		}
+		&::after {
+			width: 19px;
+			height: 10px;
+			border: 4px solid #fff;
+			border-right: none;
+			border-top: none;
+			left: 5px;
+			top: -2px;
+			transform:  rotate(-45deg);
+		}
+	}
+
+	&__img {
+		position: relative;
+		height: 700px;
+		width: 430px;
+	}
+
+	&__woman {
+		position: absolute;
+		bottom: 0;
+		left: 59%;
+		transform: translateX(-50%);
+	}
+
+	&__prod {
+		position: absolute;
+	}
+
+
+
+}
+
+
+
+
+

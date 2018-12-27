@@ -1,0 +1,66 @@
+<header class="header">
+	<div class="container">
+		<img class="header__woman" src="./img/header__woman.png" alt="">
+		<nav class="header__nav">
+			<ul class="header__links">
+				<li class="header__link header__link-1"><a href=""><span class="header__dashed">№1 среди рекомендаций</span> <span class="header__dashed">урологов за 2018 год</span></a></li>
+				<li class="header__link header__link-2"><a href=""><span class="header__dashed">Эффективность подтверждена</span> <span class="header__dashed">клиниками Германии и Минздравом</span></a></li>
+				<li class="header__link header__link-3"><a href=""><span class="header__dashed">Отзывы за 2018 год</span></a></li>
+			</ul>
+		</nav>
+		<div class="header__flex">
+			<div class="header__about">
+				<b class="header__name-prod blue">Дифорол</b>
+				<h1 class="header__title">Забудьте о боли и частом мочеиспускании навсегда</h1>
+				<p class="header__subtitle">C первых дней избавит <span class="ib">от проблем</span> <span class="ib">с мочевым</span> пузырем в независимости от их причины</p>
+				<ul class="header__list">
+					<li><b>Избавляет от дискомфорта и боли</b><span class="ib">в области</span> живота</li>
+					<li><b>Приносит полное облегчение</b> <span class="ib">при посещения</span> туалета</li>
+					<li><b>Защищает от рецидива</b> <span class="ib">дольше, чем на год</span></li>
+				</ul>
+			</div>
+			<div class="header__img">
+				<img class="header__prod" src="./img/prod.png" alt="">
+			</div>
+
+			<div class="form">
+				<div class="form__head">Успейте купить <span class="ib">по промо-цене</span> <span class="form__date">до <span class="date-0">01.09.2018</span></span></div>
+				<div class="price">
+					<div class="price__old">
+						<span class="price__title">Старая цена</span>
+						<div class="price__value">
+							<span class="price__number x_price_previous">1980</span>
+							<span class="price__currency x_currency">руб.</span>
+						</div>
+					</div>
+					<div class="price__new">
+						<span class="price__title">Новая цена</span>
+						<div class="price__value">
+							<span class="price__number x_price_current">990</span>
+							<span class="price__currency x_currency">руб.</span>
+						</div>
+					</div>
+				</div>
+				<div class="form__lastpack">
+					Осталось <span class="lastpack form__count">15</span> упаковок <span class="ib">со скидкой</span>
+				</div>
+				<form action="/submit" method="post" class="x_order_form">
+					<label class="form__label-name form__label" for="header__form-name">
+						<input class="form__input form__input-name" id="header__form-name" type="text" name="name" required autocomplete="name" placeholder="Моё имя">
+					</label>
+					<label class="form__label-tel form__label" for="header__form-tel">
+						<input class="form__input form__input-tel" id="header__form-tel" type="tel" name="phone" required autocomplete="tel" placeholder="Мой телефон">
+					</label>
+					<button class="btn" type="submit">
+						<span>
+							Заказать
+							<small class="btn__small">со скидкой</small>
+						</span>
+					</button>
+				</form>
+				<p class="form__footnote">* при заказе курса</p>
+				<p class="form__secure">Ваши данные защищены!</p>
+			</div>
+		</div>
+	</div>
+</header>
