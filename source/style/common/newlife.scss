@@ -1,8 +1,9 @@
 .newlife{
-	height: 1257px;
-	background: url('../img/bg.png') no-repeat center center;
+	
+	background: url('../img/bg.png') no-repeat top center;
 	background-color: #e4f3f9;
 	position: relative;
+	
 	z-index: 1;
 	&:before{
 		content: "";
