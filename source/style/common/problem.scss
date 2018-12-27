@@ -23,9 +23,11 @@
 			height: 280px;
 			overflow: hidden;
 			padding-top: 20px;
+			margin-left: auto;
+			margin-right: auto;
 		img {
 			width: 271px;
-			height: 218px;
+			
 			box-shadow: -1px 3px 24px rgba(181, 205, 223, 0.77);
 			border-radius: 4px;
 		}
@@ -87,6 +89,9 @@
 		bottom: -20px;
 	}
 
+	&__text {
+		padding: 0 10px;
+	}
 	&__bottom {
 		margin-top: 70px;
 		font-size: 24px;
@@ -94,7 +99,7 @@
 		color: #202020;
 		background-color: #e8f3da;
 		text-align: center;
-		width: 840px;
+		max-width: 840px;
 		margin-left: auto;	
 		margin-right: auto;
 		padding: 15px;
@@ -102,4 +107,162 @@
 
 	}
 	
+}
+
+
+// media 
+
+@media screen and (max-width: 1190px) {
+	.problem {
+		padding-bottom: 60px;
+		padding-top: 80px;
+		&__list {
+			justify-content: space-between;
+			flex-wrap: wrap;
+			margin-left: -18px;
+			padding: 0 10px;
+			margin-top: 14px;
+		}
+		&__item {
+			width: 230px;
+		}
+		&__img {
+			width: 250px;
+			height: 230px;
+			img {
+				width: 230px;
+			}
+		}
+
+		&__circle {
+			width: 224px;
+			height: 50px;
+			bottom: -6px;
+			&::before {
+				top: -403px;
+			}
+		}
+		&__desc {
+			margin-top: 0;
+			font-size: 17px;
+
+		}
+		&__text {
+			padding: 0;
+		}
+		&__count {
+			top: -59px;
+			height: 45px;
+			width: 45px;
+			font-size: 52px;
+		}
+		&__bottom {
+			margin-top: 40px;
+			font-size: 22px;
+			max-width: 780px;
+		}
+
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.problem {
+		padding-top: 118px;
+		padding-bottom: 40px;
+
+		.title {
+			width: 80%;
+		}
+
+		&__list {
+			justify-content: space-around;
+			margin-left: 0;
+			padding: 0;
+		}
+		&__item {
+			width: 42%;
+		}
+		&__img {
+			width: 300px;
+			height: 280px;
+
+			img {
+				width: 270px;
+			}
+		}
+
+		&__circle {
+			width: 260px;
+			height: 50px;
+			bottom: 17px;
+			&::before {
+				top: -403px;
+			}
+		}
+		&__desc {
+			z-index: 20;
+			margin-top: -26px;
+		}
+		&__bottom {
+			font-size: 20px;
+			max-width: 696px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.problem {
+		padding-bottom: 30px;
+		padding-top: 80px;
+		
+		.title {
+			width: 90%;
+		}
+		&__list {
+			margin-top: 6px;
+		}
+		&__item {
+			width: 260px;
+		}
+		&__img {
+			width: 250px;
+			height: 230px;
+			img {
+				width: 230px;
+			}
+		}
+
+		&__circle {
+			width: 224px;
+			height: 50px;
+			bottom: -6px;
+			&::before {
+				top: -403px;
+			}
+		}
+		&__desc {
+			margin-top: -11px;
+		}
+		&__bottom {
+			font-size: 18px;
+			margin-top: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 639px) {
+	.problem {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		.title {
+			width: auto;
+		}
+
+		&__text {
+			font-size: 16px;
+		}
+		&__bottom {
+			font-size: 17px;
+		}
+	}
 }
