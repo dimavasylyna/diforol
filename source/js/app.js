@@ -44,3 +44,4 @@ $('.reviews-content-box__cbtn').on('click', function () {
     }
   ]
  });
+
