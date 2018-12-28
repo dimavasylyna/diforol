@@ -1,7 +1,7 @@
 .orus {
     padding-top: 56px;
     padding-bottom: 71px;
- 
+
     &-top {
         margin-top: 89px;
         display: flex;
@@ -59,9 +59,26 @@
             position: absolute;
             left: 50%;
             top: 0;
-            background: url(../img/orus-line.jpg) no-repeat;
-            width: 27px;
-            height: 11px;
+            transform: translate(-50%);
+            width: 0;
+height: 0;
+border-style: solid;
+border-width: 10px 14px 0 14px;
+border-color: #9ebcc6 transparent transparent transparent;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: -1px;
+            transform: translate(-50%);
+            width: 0;
+height: 0;
+border-style: solid;
+border-width: 10px 14px 0 14px;
+border-color: #ffffff transparent transparent transparent;
+
         }
     }
 
@@ -242,6 +259,7 @@
             &-box {
                 width: 320px;
                 border-radius: 5px;
+
                 &__text {
                     font-size: 18px;
                     line-height: normal;
@@ -370,13 +388,15 @@
             &-boximg {
                 width: 52%;
 
-                &__use {display: none;}
+                &__use {
+                    display: none;
+                }
 
                 &__prod {
                     position: initial;
-                   display: block;
-                   margin-right: auto;
-                   margin-left: auto;
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
                 }
             }
 
@@ -399,14 +419,17 @@
             }
         }
 
-        &-line {margin-top: 42px;
-    margin-bottom: 35px;}
+        &-line {
+            margin-top: 42px;
+            margin-bottom: 35px;
+        }
 
         &-bottom {
 
-margin-top: 30px;
-flex-wrap: wrap;
-justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+
             &-box {
                 margin: 10px;
 
@@ -428,45 +451,50 @@ justify-content: center;
 
         .prod-name {}
 
-        &-lock {line-height: normal;
+        &-lock {
+            line-height: normal;
             padding-top: 10px;
-            padding-bottom: 10px;display: flex;
+            padding-bottom: 10px;
+            display: flex;
             justify-content: center;
-            align-items: center;}
+            align-items: center;
+        }
     }
 }
 
 @media screen and (max-width: 639px) {
-     .orus {
+    .orus {
         &-top {
-           
+
 
             &-boximg {
                 width: 305px;
                 max-width: 100%;
 
-                &__use {display: none;}
+                &__use {
+                    display: none;
+                }
 
                 &__prod {
-                   position: initial;
-                   display: block;
-                   margin-right: auto;
-                   margin-left: auto;
+                    position: initial;
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
                 }
             }
 
             &-instruction {
-              
+
 
                 &__small {
-                   font-size: 17px;
+                    font-size: 17px;
 
-                
+
                 }
 
                 &__big {
-                 padding-top: 10px;
-                 padding-bottom: 10px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
                 }
             }
         }
@@ -477,7 +505,7 @@ justify-content: center;
 
 
             &-box {
-        
+
 
                 &__text {}
 
@@ -497,9 +525,11 @@ justify-content: center;
 
         .prod-name {}
 
-        &-lock {width: 100%; height: auto;}
+        &-lock {
+            width: 100%;
+            height: auto;
+        }
     }
 }
-@media screen and (max-width: 479px) {
 
-}
+@media screen and (max-width: 479px) {}
