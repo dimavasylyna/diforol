@@ -127,8 +127,9 @@
                 align-items: center;
                 font-size: 30px;
                 transition: all .5s;
-                &:hover{
-                	background-color: #c2df89;
+
+                &:hover {
+                    background-color: #c2df89;
                 }
             }
 
@@ -160,7 +161,8 @@
     background-color: #ffd36e;
     left: -60px;
     border-radius: 50%;
-transition: all .5s;
+    transition: all .5s;
+
     &:before {
         font-size: 0;
         width: 2px;
@@ -185,8 +187,10 @@ transition: all .5s;
         transform: translate(-75%, -13%) rotate(-45deg);
         transition: all .5s;
     }
-    &:hover,&:focus{
-    	background-color: #ffdb88;
+
+    &:hover,
+    &:focus {
+        background-color: #ffdb88;
     }
 }
 
@@ -197,7 +201,8 @@ transition: all .5s;
     background-color: #ffd36e;
     right: -60px;
     border-radius: 50%;
-transition: all .5s;
+    transition: all .5s;
+
     &:before {
         font-size: 0;
         width: 2px;
@@ -220,171 +225,174 @@ transition: all .5s;
         left: 50%;
         top: 50%;
         transform: translate(75%, -14%) rotate(45deg);
-        
+
     }
-    &:hover,&:focus{
-    	background-color:#ffdb88;
-    
+
+    &:hover,
+    &:focus {
+        background-color: #ffdb88;
+
     }
 }
-@media screen and (max-width: 1345px){
-    .slick-next{
+
+@media screen and (max-width: 1345px) {
+    .slick-next {
         right: 0px;
     }
-    .slick-prev{
+
+    .slick-prev {
         left: 0px;
     }
-    .slick-list {
-    margin: 0 40px;
-}
-}
-@media screen and (max-width: 1190px) {
-   .reviews{
 
-        &-content{
+    .slick-list {
+        margin: 0 40px;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .reviews {
+
+        &-content {
             margin-top: 45px;
-            &-box{
-                &__name{
+
+            &-box {
+                &__name {
                     font-size: 21px;
                 }
-                &__thesis{
+
+                &__thesis {
                     font-size: 16px;
                     line-height: normal;
-                    &:before{
+
+                    &:before {
                         line-height: 1;
                         top: -11px;
                     }
                 }
-                &__text{
+
+                &__text {
                     font-size: 16px;
                     padding-left: 12px;
                     padding-right: 12px;
                     line-height: 23px;
                     margin-top: 23px;
-                    br{
+
+                    br {
                         display: none;
                     }
                 }
             }
         }
-   }
+    }
 }
 
 @media (max-width: 1023px) {
-   .reviews{
-    margin-top: 0;
-    &:before,&:after{
-        display: none;
-    }
-        &-content{
-           
-            &-box{
-                &__name{
-                   
+    .reviews {
+        margin-top: 0;
+
+        &:before,
+        &:after {
+            display: none;
+        }
+
+        &-content {
+
+            &-box {
+                &__name {}
+
+                &__thesis {
+
+                    &:before {}
                 }
-                &__thesis{
-                   
-                    &:before{
-                        
-                    }
-                }
-                &__text{
-                   
+
+                &__text {
+
                     margin-top: 10px;
                 }
             }
         }
-   }
+    }
 }
 
 @media (max-width: 767px) {
-  .reviews{
-        &-content{
-           margin-bottom: 50px;
-            &-box{
-                &__name{
-                   
+    .reviews {
+        &-content {
+            margin-bottom: 50px;
+
+            &-box {
+                &__name {
+                    font-size: 18px;
                 }
-                &__thesis{
+
+                &__thesis {
                     height: 60px;
                     margin-top: 20px;
-                    &:before{
-                        
-                    }
+
+                    &:before {}
                 }
-                &__text{
-                   
+
+                &__text {
+
                     margin-top: 10px;
                 }
             }
         }
-   }
-.slick-next{
-        right: 255px;
+    }
+
+    .slick-next {
+        right: 8px;
         transform: translate(0, -0%);
         z-index: 10;
-        top: auto;
-        bottom: -50px;
+        top: 193px;
+
     }
-    .slick-prev{
-        left: 255px;
+
+    .slick-prev {
+        left: 8px;
         transform: translate(0, 0%);
-         z-index: 10;
-         top: auto;
-         bottom: -50px;
+        z-index: 10;
+        top: 193px;
+
     }
+
     .slick-list {
-    margin: 0 -15px;
-}
+        margin: 0 -15px;
+    }
 }
 
 @media screen and (max-width: 639px) {
-  .reviews{
-        &-content{
+    .reviews {
+        &-content {
             margin-bottom: 0;
             width: 370px !important;
-              max-width: 100%;
-              margin-right: auto;
-              margin-left: auto;
-            &-box{
-               
-              
-                &__name{
-                   
+            max-width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+
+            &-box {
+
+
+                &__name {}
+
+                &__thesis {
+
+                    &:before {}
                 }
-                &__thesis{
-                   
-                    &:before{
-                        
-                    }
-                }
-                &__text{
-                   max-height: 188px;
-                    margin-top: 50px;
+
+                &__text {
+                    max-height: 188px;
+                    
                 }
             }
         }
-   }
-.slick-next{
-        right: auto;
-        left: 50%;
-        transform: translate(230%, -0%);
-        z-index: 10;
-        top: 310px;
-        bottom: auto;
     }
-    .slick-prev{
-      left: auto;
-        transform: translate(-230%, 0%);
-         z-index: 10;
-         top: 310px;
-         bottom: auto;
-          right: 50%;
-    }
+
+
     .slick-list {
-    margin: 0 -15px;
+        margin: 0 -15px;
+    }
 }
-}
+
 .content-plus .reviews-content-box__text {
     max-height: 800px;
 }
