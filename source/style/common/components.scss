@@ -1,6 +1,6 @@
 .components {
 	padding-top: 85px;
-	padding-bottom: 80px;
+	padding-bottom: 102px;
 	position: relative;
 	background: url(../img/bg.png) no-repeat 50% 0;
     background-color: #e4f3f9;
@@ -21,19 +21,19 @@
     transform: translate(-50%) rotate(-180deg) ;
 	}
 
-	// &::after {
-	// 	content: "";
- //    position: absolute;
- //    left: 50%;
- //    -webkit-transform: translate(-50%);
- //    -ms-transform: translate(-50%);
- //    transform: translate(-50%);
- //    bottom: 0;
- //    height: 20px;
- //    width: 2660px;
- //    background: url(../img/after-bg.svg) no-repeat center;
- //    z-index: 0;
-	// }
+	&::after {
+		content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    bottom: 0;
+    height: 20px;
+    width: 2660px;
+    background: url(../img/after-bg.svg) no-repeat center;
+    z-index: 0;
+	}
 
 	.title {
 		padding: 0 150px;
@@ -358,7 +358,8 @@
 	.components {
 		padding-top: 40px;
 		padding-bottom: 40px;
-		&::before {
+		&::before,
+		&::after {
 			display: none;
 		}
 		.title {

@@ -1,0 +1,260 @@
+.days {
+	padding-top: 49px;
+	padding-bottom: 63px;
+	text-align: center;
+	color: #202020;
+	&__subtitle {
+		display: block;
+		font-size: 22px;
+		font-weight: 500;
+		margin-top: 12px;
+		color: #444;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 157px;
+	}
+	&__item {
+		max-width: 370px;
+		// overflow: hidden;
+		border-radius: 6px;
+		box-shadow: 0px 5px 21px rgba(181, 205, 223, 0.77);
+	}
+
+	&__item-1 {
+		.days__duration {
+			background-color: #edb440;
+		}
+		.days__img-block {
+			background-position: -68px -56px;
+		}
+	}
+	&__item-2 {
+		.days__duration {
+			background-color: #f7d373;
+		}
+		.days__img-block {
+		    background-position: -2px -16px;
+		}
+	}
+	&__item-3 {
+		.days__duration {
+			background-color: #ffe6a5;
+		}
+		.days__img-block {
+			background-position: -83px -23px;
+			transform: scaleX(-1);
+		}
+		.days__img {
+			transform: scaleX(-1) translateX(50%);
+		}
+	}
+	&__img-block {
+		background-image: url(../img/days__img-bg.jpg);
+		min-height: 167px;
+		position: relative;
+		border-radius: 6px 6px 0 0;
+	}
+	&__img {
+		position: absolute;
+		bottom: -57px;
+		left: 50%;
+		z-index: 0;
+		transform: translateX(-50%);
+		height: auto;
+		max-width: 263px;
+	}
+	&__duration {
+		position: relative;
+		z-index: 5;
+		font-size: 24px;
+		font-weight: 500;
+		padding: 12px;
+		padding-top: 18px;
+	}
+	&__desc {
+		position: relative;
+		z-index: 5;
+		background-color: #fff;
+		line-height: 28px;
+		padding: 30px;
+		padding-top: 27px;
+		padding-bottom: 40px;
+		border-radius: 0 0 6px 6px;
+		h3 {
+			font-size: 19px;
+			font-weight: 500; 
+			margin-bottom: 7px;
+		}
+		p {
+			font-size: 18px;
+			color: #444;
+		}
+	}
+	&__conclusion {
+		font-size: 24px;
+		font-weight: 500;
+		background-color: #e8f3da;
+		border-radius: 60px; 
+		max-width: 830px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 15px;
+		margin-top: 81px;
+	}
+}
+
+@media screen and (max-width: 1190px) {
+	.days {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		&__subtitle {
+			margin-top: 0;
+			font-size: 21px;
+		}
+		&__list {
+			margin-top: 135px;
+		}
+		&__item {
+			max-width: 320px;
+		}
+		&__duration {
+			font-size: 23px;
+			padding-top: 16px;
+		}
+		&__desc {
+			padding-left: 14px;
+			padding-right: 14px;
+			line-height: 26px;
+			padding-bottom: 34px;
+			p {
+				font-size: 17px;
+			}
+		}
+		&__conclusion {
+			max-width: 780px;
+			font-size: 23px;
+		}
+	}
+}
+
+@media (max-width: 1023px) {
+	.days {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		&__subtitle {
+			font-size: 20px;
+		}
+		&__list {
+			flex-wrap: wrap;
+			margin-top: 25px;
+			justify-content: space-around;
+		}
+		&__item {
+			max-width: 330px;
+		}
+		&__item-3 {
+			margin-top: 40px;
+		}
+		&__img {
+			width: auto;
+			height: 230px;
+		}
+		&__duration {
+			font-size: 21px;
+			padding: 8px;
+		}
+		&__desc {
+			line-height: 22px;
+			padding-top:16px;
+			padding-bottom: 16px;
+			h3 {
+				margin-bottom: 4px;
+			}
+		}
+		&__conclusion {
+			font-size: 21px;
+			max-width: 700px;
+			margin-top: 35px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.days {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		&__subtitle {
+			font-size: 19px;
+		}
+		&__item {
+			max-width: 290px;
+		}
+		&__item-3 {
+			margin-top: 25px;
+		}
+		&__duration {
+			padding: 4px;
+			font-size: 19px;
+		}
+		&__desc {
+			padding-top: 14px;
+			padding-bottom: 14px;
+			h3 {
+				font-size: 17px;
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+		&__conclusion {
+			font-size: 19px;
+		}
+	}
+}
+
+
+@media screen and (max-width: 639px) {
+	.days {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		.title {
+			.ib {
+				display: inline;
+			}
+		}
+		&__subtitle {
+			font-size: 17px;
+			line-height: 1.2;
+			margin-top: 10px;
+		}
+
+		&__item {
+			margin-top: 55px;
+		}
+		&__item-1 {
+			margin-top: 20px;
+		}
+		&__img-block {
+			min-height: 110px;
+		}
+		&__img {
+			height: 200px;
+		}
+		&__duration {
+			font-size: 18px;
+		}
+		&__desc {
+			padding-top: 8px;
+			padding-bottom: 8px;
+			line-height: 19px;
+		}
+		&__conclusion {
+			margin-top: 22px;
+			border-radius: 10px;
+			max-width: 370px;
+			font-size: 18px;
+		}
+	}
+}
