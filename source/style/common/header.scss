@@ -285,13 +285,15 @@
 @media screen and (max-width: 1190px) {
 	.header {
 		&__links {
-			justify-content: space-around;
+			// justify-content: space-around;
+			justify-content: flex-start;
 		}
 		&__link-1 {
 			margin-right: 0px;
 			max-width: 320px;
 			&::after {
-				right: 24px;
+				// right: 24px;
+				right: 34px;
 			}
 		}
 		&__link-2 {
@@ -487,7 +489,7 @@
 @media screen and (max-width: 639px) {
 	.header {
 		.container {
-			padding-bottom: 106px;
+			padding-bottom: 106px; 
 		}
 		&__links {
 			margin-bottom: 10px;

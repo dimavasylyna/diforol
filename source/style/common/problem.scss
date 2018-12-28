@@ -2,6 +2,19 @@
 	padding-top: 151px;
 	padding-bottom: 92px;
 	position: relative;
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: -113px;
+		left: 50%;
+		height: 0px;
+		width: 0px;
+		border: 40px solid transparent;
+		border-top: 30px solid #fff;
+		z-index: 10;
+		transform: translateX(-50%) translateY(-50%) ;
+	}
 	.title {
 		width: 60%;
 		margin-left: auto;
@@ -169,6 +182,9 @@
 	.problem {
 		padding-top: 118px;
 		padding-bottom: 40px;
+		&::after {
+			display: none;
+		}
 
 		.title {
 			width: 80%;
