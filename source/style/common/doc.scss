@@ -1,9 +1,20 @@
 .doc {
     padding-top: 127px;
     padding-bottom: 33px;
-    background: url(../img/doctor-bg.png) no-repeat 7% bottom;
+    
 	position: relative;
-	overflow: hidden;
+    overflow: hidden;
+	z-index: 2;
+    &:before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translate(-149%);
+        bottom: 8px;
+        background: url(../img/doctor-bg.png) no-repeat center;
+        width: 503px;
+        height: 604px;
+    }
     &-content {
         margin-top: 60px;
         width: 594px;
@@ -38,9 +49,10 @@
     }
     &__img{
     	position: absolute;
-		bottom: -4px;
-		left: 30%;
-		transform: translate(-50%);
+		bottom: 6px;
+		left: 50%;
+		transform: translate(-107%);
+        z-index: 3;
     }
 }
 .mnone{
