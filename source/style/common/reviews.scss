@@ -104,6 +104,8 @@
                 max-height: 304px;
                 overflow: hidden;
                 transition: all 1s;
+                width: 370px;
+                  max-width: 100%;
             }
 
             &__btn {
@@ -276,7 +278,7 @@
                     padding-right: 12px;
                     line-height: 23px;
                     margin-top: 23px;
-
+                  width: 278px;
                     br {
                         display: none;
                     }
@@ -306,7 +308,7 @@
                 }
 
                 &__text {
-
+width: 304px;
                     margin-top: 10px;
                 }
             }
@@ -332,7 +334,7 @@
                 }
 
                 &__text {
-
+width: 295px;
                     margin-top: 10px;
                 }
             }
@@ -381,7 +383,7 @@
 
                 &__text {
                     max-height: 188px;
-                    
+                    width: 100%;
                 }
             }
         }

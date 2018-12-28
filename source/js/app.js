@@ -26,20 +26,14 @@ $('.reviews-content-box__cbtn').on('click', function () {
       breakpoint: 767,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 2
       }
     },
     {
-      breakpoint: 640,
+      breakpoint: 639,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 420,
-      settings: {
-        slidesToShow: 1,
-        centerMode: false
       }
     }
   ]
