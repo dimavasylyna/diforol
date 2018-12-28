@@ -321,6 +321,8 @@ b {
 @import "common/slick-theme.scss";
 @import "common/newlife.scss";
 @import "common/doc.scss";
+@import "common/reviews.scss";
+@import "common/orus.scss";
 @import "common/footer.scss";
 
 @media screen and (max-width: 1190px) {
@@ -521,7 +523,7 @@ b {
     }
 
     &__footnote {
-        margin-top: 8px;
+        margin-top: 18px;
     }
 
 }
@@ -626,7 +628,7 @@ b {
     border: none;
     width: 220px;
     height: 71px;
-    box-shadow: inset 0 0 10px rgba(247, 207, 123, 0.48);
+    box-shadow: inset 0 0 10px rgba(247, 207, 123, 0.48), 0px 49px 144px -30px rgba(0,0,0,0.38);
     line-height: 22px;
     background-image: linear-gradient(to right, #82aa34 0%, #82aa34 1%, #8db838 50%, #82aa34 100%);
     border-bottom: 5px solid #749c27;

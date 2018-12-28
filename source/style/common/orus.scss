@@ -1,0 +1,190 @@
+.orus {
+    padding-top: 56px;
+    padding-bottom: 51px;
+
+    &-top {
+        margin-top: 89px;
+        display: flex;
+        justify-content: flex-end;
+
+        &-boximg {
+            position: relative;
+            width: 34%;
+
+            &__prod {
+                position: absolute;
+                width: 196px;
+                height: 279px;
+                top: -38px;
+                left: -111px;
+            }
+        }
+
+        &-instruction {
+            width: 50%;
+
+            &__small {
+                font-size: 20px;
+                font-weight: 500;
+                color: #202020;
+                line-height: 28px;
+            }
+
+            &__big {
+                width: 470px;
+                background-color: #e8f3da;
+                color: #202020;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 26px;
+                text-align: center;
+                padding: 15px 28px;
+                border-radius: 40px;
+                margin-top: 38px;
+            }
+        }
+    }
+
+    &-line {
+        background-color: #9ebcc6;
+        opacity: 0.58;
+        height: 1px;
+        width: 100%;
+        position: relative;
+        margin-top: 98px;
+        margin-bottom: 60px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            background: url(../img/orus-line.jpg) no-repeat;
+            width: 27px;
+            height: 11px;
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 62px;
+
+        &-box {
+            width: 367px;
+            position: relative;
+
+            &__img {
+                position: relative;
+                height: 217px;
+
+                &:after {
+                    content: "1";
+                    position: absolute;
+                    left: 50%;
+                    bottom: -24px;
+                    -webkit-transform: translate(-50%);
+                    -ms-transform: translate(-50%);
+                    transform: translate(-50%);
+                    color: #2a3d70;
+                    font-size: 57px;
+                    font-weight: 700;
+                    width: 51px;
+                    height: 51px;
+                    background-color: #ffd36e;
+                    opacity: 0.93;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+            }
+
+
+            &__text {
+                color: #202020;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 28px;
+                margin-top: 30px;
+                text-align: center;
+            }
+        }
+
+        &-box1 {
+            background: url(../img/order-bg1.png) no-repeat top center;
+
+            &__img {
+
+                img {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    transform: translate(-50%);
+                    width: 191px;
+                }
+
+                &:before {
+                    content: "";
+                    width: 64px;
+                    height: 55px;
+                    position: absolute;
+                    top: 35px;
+                    left: 50%;
+                    transform: translate(35%);
+                    background: url(../img/hand.png);
+                    z-index: 5;
+                }
+            }
+        }
+
+        &-box2 {
+            background: url(../img/order-bg2.png) no-repeat top center;
+
+            &__img {
+
+                img {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 9px;
+                    transform: translate(-50%);
+
+                }
+            }
+        }
+
+        &-box3 {
+            background: url(../img/order-bg3.png) no-repeat top center;
+
+            &__img {
+
+                img {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 7px;
+                    transform: translate(-60%);
+
+                }
+            }
+        }
+    }
+    .prod-name{
+    	position: absolute;
+    	left: 50%;
+    	top: 50%;
+    	color: #c1b095;
+    	font-size: 24px;
+    	transform: translate(-50%, -236%) skew(20deg,-20deg);
+    }
+    &-lock{
+    	width: 750px;
+		height: 59px;
+		background-color: #e8f3da;
+		padding: 16px 28px;
+		color: #202020;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 26px;
+		border-radius: 35px;
+		display: block;
+		margin: 54px auto 0;
+    }
+}
