@@ -327,6 +327,7 @@ b {
 @import "common/reviews.scss";
 @import "common/orus.scss";
 @import "common/footer.scss";
+@import "common/popup.scss";
 
 @media screen and (max-width: 1190px) {
     .container {
@@ -407,6 +408,7 @@ b {
     position: relative;
     z-index: 10;
     box-shadow: 0px 5px 60px rgba(150, 180, 202, 0.77);
+    border-radius: 5px;
 
     &::after {
         content: '';
@@ -427,7 +429,7 @@ b {
         padding: 15px 40px;
         background-color: #fff2d4;
         font-weight: bold;
-
+border-radius: 5px;
         line-height: 1.1;
         margin-bottom: 16px;
     } 

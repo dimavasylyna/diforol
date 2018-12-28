@@ -1,0 +1,126 @@
+.ever-popup__inner {
+    max-width: 100% !important;
+}
+
+.pop-up {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pop-up__box {
+      width: 902px;
+      
+    border-radius: 5px;
+    background: url(../img/popup-bg.png) no-repeat top;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    max-width: 100%;
+    padding: 30px 15px;
+}
+
+.popup-title {
+    text-align: center;
+    font-size: 40px;
+}
+.popup-title h3{
+    margin: 0;
+}
+
+.popup-title h2 {
+    margin: 0;
+}
+
+.pop-up__content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+.image-pack{
+    width: 329px;
+}
+.image-pack img {
+   display: inline-block;
+   max-width: 100%;
+   max-height: 470px;
+}
+
+.pop-up__left {
+   flex: 1;
+   text-align: center;
+    min-width: 250px;
+    width: 329px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.pop-up__right {
+   width: 50%;
+}
+.form-box{
+    .form{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+.form-box1 {}
+
+.form-box1>* {
+    float: none !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 999px) {
+    .pop-up__box {
+        width: 460px;
+    }
+    .pop-up__content {
+        justify-content: center;
+    }
+    .image-pack{
+        padding-bottom: 20px;
+    }
+    .image-pack img{
+        max-height: 280px;
+    }
+    .pop-up__left{
+        display: none;
+    }
+    .pop-up__right{
+        width: 100%;
+    }
+}
+@media(min-width: 1001px){
+    .ever-popup__close{
+    top: 50px !important;
+    right: 25px !important;
+}
+.ever-popup__close:after, .ever-popup__close:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 30px !important;
+    height: 3px !important;
+    background: #222222 !important;
+}
+}
+@media (max-width: 1000px){
+.pop-up{
+    display: none !important;
+}
+.ever-popup__inner .form::after{
+    display: none !important ;
+}
+}
