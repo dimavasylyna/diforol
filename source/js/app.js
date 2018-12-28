@@ -51,7 +51,7 @@ $('.reviews-content-box__cbtn').on('click', function () {
     $('a').click( function(){ 
   var scroll_el = $(this).attr('href'); 
         if ($(scroll_el).length != 0) { 
-      $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 1000); 
+      $('html, body').animate({ scrollTop: $(scroll_el).offset().top + 50 }, 1000); 
         }
       return false; 
     });
