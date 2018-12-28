@@ -314,7 +314,9 @@ b {
 .blue {
     color: #2a3d70;
 }
-
+.nowrap{
+    white-space: nowrap;
+}
 @import "common/header";
 @import "common/problem";
 @import "common/slick.scss";

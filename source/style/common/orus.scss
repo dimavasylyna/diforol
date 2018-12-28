@@ -140,6 +140,9 @@
             background: url(../img/order-bg2.png) no-repeat top center;
 
             &__img {
+                &:after {
+                    content: "2";
+                }
 
                 img {
                     position: absolute;
@@ -155,6 +158,9 @@
             background: url(../img/order-bg3.png) no-repeat top center;
 
             &__img {
+                &:after {
+                    content: "3";
+                }
 
                 img {
                     position: absolute;
@@ -166,25 +172,334 @@
             }
         }
     }
-    .prod-name{
-    	position: absolute;
-    	left: 50%;
-    	top: 50%;
-    	color: #c1b095;
-    	font-size: 24px;
-    	transform: translate(-50%, -236%) skew(20deg,-20deg);
+
+    .prod-name {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        color: #c1b095;
+        font-size: 24px;
+        transform: translate(-50%, -236%) skew(20deg, -20deg);
     }
-    &-lock{
-    	width: 750px;
-		height: 59px;
-		background-color: #e8f3da;
-		padding: 16px 28px;
-		color: #202020;
-		font-size: 24px;
-		font-weight: 500;
-		line-height: 26px;
-		border-radius: 35px;
-		display: block;
-		margin: 54px auto 0;
+
+    &-lock {
+        width: 750px;
+        height: 59px;
+        background-color: #e8f3da;
+        padding: 16px 28px;
+        color: #202020;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 26px;
+        border-radius: 35px;
+        display: block;
+        margin: 54px auto 0;
     }
+}
+
+@media screen and (max-width: 1190px) {
+    .orus {
+        &-top {
+            margin-top: 60px;
+            align-items: center;
+
+            &-boximg {
+                margin-right: 20px;
+
+                &__use {
+                    width: 100%;
+                }
+
+                &__prod {
+                    height: auto;
+                    width: 170px;
+                    left: -70px;
+                }
+            }
+
+            &-instruction {
+                &__small {
+                    font-size: 19px;
+                    line-height: normal;
+                }
+
+                &__big {
+                    width: 430px;
+                    font-size: 21px;
+                    margin-top: 25px;
+                }
+            }
+        }
+
+        &-line {
+            margin-top: 70px;
+            margin-bottom: 45px;
+        }
+
+        &-bottom {
+            margin-top: 50px;
+
+            &-box {
+                width: 320px;
+                border-radius: 5px;
+                &__text {
+                    font-size: 18px;
+                    line-height: normal;
+                    margin-top: 35px;
+                }
+            }
+
+            &-box3 {
+                &__img {
+                    img {
+                        transform: translate(-52.5%);
+                    }
+                }
+            }
+        }
+
+        .prod-name {
+            transform: translate(-27%, -239%) skew(20deg, -20deg);
+        }
+
+        &-lock {
+            margin-top: 40px;
+            text-align: center;
+            width: 710px;
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .orus {
+        &-top {
+            margin-top: 45px;
+
+
+            &-boximg {
+
+
+                &__use {}
+
+                &__prod {
+                    width: 142px;
+                    left: -59px;
+                }
+            }
+
+            &-instruction {
+                width: 52%;
+
+                &__small {
+                    font-size: 18px;
+
+                    br {
+                        display: none;
+                    }
+                }
+
+                &__big {
+                    width: 365px;
+                    font-size: 18px;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        &-line {
+            margin-top: 56px;
+            margin-bottom: 35px;
+        }
+
+        &-bottom {
+            margin-top: 35px;
+
+            &-box {
+                width: 240px;
+
+                &__text {
+                    font-size: 17px;
+                    line-height: normal;
+                    margin-top: 30px;
+                }
+
+                &__img {
+                    img {
+                        width: 80%;
+                    }
+
+                    &:after {
+                        bottom: 9px;
+                        font-size: 44px;
+                        width: 42px;
+                        height: 42px;
+                        bottom: -15px;
+                    }
+                }
+            }
+
+            &-box3 {
+                &__img {
+                    img {
+                        width: 95%;
+                        bottom: 28px;
+                    }
+                }
+            }
+        }
+
+        .prod-name {
+            font-size: 17px;
+        }
+
+        &-lock {
+            margin-top: 30px;
+            width: 590px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .orus {
+        &-top {
+            flex-direction: column;
+            margin-top: 35px;
+
+            &-boximg {
+                width: 52%;
+
+                &__use {display: none;}
+
+                &__prod {
+                    position: initial;
+                   display: block;
+                   margin-right: auto;
+                   margin-left: auto;
+                }
+            }
+
+            &-instruction {
+                width: 100%;
+                margin-top: 25px;
+
+                &__small {
+                    text-align: center;
+
+                    br {}
+                }
+
+                &__big {
+                    display: block;
+                    margin: 18px auto 0;
+                    max-width: 100%;
+                    line-height: normal;
+                }
+            }
+        }
+
+        &-line {margin-top: 42px;
+    margin-bottom: 35px;}
+
+        &-bottom {
+
+margin-top: 30px;
+flex-wrap: wrap;
+justify-content: center;
+            &-box {
+                margin: 10px;
+
+                &__text {}
+
+                &__img {
+                    img {}
+
+                    &:after {}
+                }
+            }
+
+            &-box3 {
+                &__img {
+                    img {}
+                }
+            }
+        }
+
+        .prod-name {}
+
+        &-lock {line-height: normal;
+            padding-top: 10px;
+            padding-bottom: 10px;display: flex;
+            justify-content: center;
+            align-items: center;}
+    }
+}
+
+@media screen and (max-width: 639px) {
+     .orus {
+        &-top {
+           
+
+            &-boximg {
+                width: 305px;
+                max-width: 100%;
+
+                &__use {display: none;}
+
+                &__prod {
+                   position: initial;
+                   display: block;
+                   margin-right: auto;
+                   margin-left: auto;
+                }
+            }
+
+            &-instruction {
+              
+
+                &__small {
+                   font-size: 17px;
+
+                
+                }
+
+                &__big {
+                 padding-top: 10px;
+                 padding-bottom: 10px;
+                }
+            }
+        }
+
+        &-line {}
+
+        &-bottom {
+
+
+            &-box {
+        
+
+                &__text {}
+
+                &__img {
+                    img {}
+
+                    &:after {}
+                }
+            }
+
+            &-box3 {
+                &__img {
+                    img {}
+                }
+            }
+        }
+
+        .prod-name {}
+
+        &-lock {width: 100%; height: auto;}
+    }
+}
+@media screen and (max-width: 479px) {
+
 }
