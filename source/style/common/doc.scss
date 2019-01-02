@@ -57,7 +57,7 @@
         position: absolute;
         bottom: 6px;
         left: 50%;
-        transform: translate(-105%);
+        transform: translate(-105%) rotate(-0.1deg);
         z-index: 3;
 
         &-name {
