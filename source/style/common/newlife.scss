@@ -12,7 +12,7 @@
         position: absolute;
         left: 50%;
         background-size: cover;
-        top: 0;
+        top: -1px;
         height: 20px;
         width: 2660px;
         background: url(../img/after-bg.svg) no-repeat center;
@@ -273,6 +273,9 @@
 }
 @media screen and (max-width: 1190px) {
     .newlife {
+        &:before{
+            top: -2px;
+        }
         &:after{
             bottom: -2px;
         }

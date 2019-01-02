@@ -17,7 +17,7 @@
 	    height: 20px;
 	    width: 2660px;
 	    background: url(../img/after-bg.svg) no-repeat center;
-	    z-index: 0;
+	    z-index: 5;
 	}
 
 
@@ -198,16 +198,16 @@
 	&__prod {
 		position: absolute;
 		height: auto;
-		width: 329px;
-		top: 170px;
-		left: -28px;
+		    width: 323px;
+    top: 182px;
+    left: -22px;
 	}
 
 	&__woman {
 		height: auto;
 		width: 554px;
 		position: absolute;
-		bottom: 17px;
+		bottom: 14px;
 		left: 59%;
 		transform: translateX(-50%);
 		z-index: 0;
