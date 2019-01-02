@@ -387,6 +387,9 @@
 
 @media (max-width: 767px) {
     .newlife {
+        .title br{
+            display: none;
+        }
         &-content {
             margin-top: 14px;
 

@@ -16,7 +16,7 @@ $('.reviews-content-box__cbtn').on('click', function () {
     arrows: true,
     responsive: [
     {
-      breakpoint: 1023,
+      breakpoint: 1024,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2
@@ -30,7 +30,7 @@ $('.reviews-content-box__cbtn').on('click', function () {
       }
     },
     {
-      breakpoint: 639,
+      breakpoint: 640,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
