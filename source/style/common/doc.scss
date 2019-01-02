@@ -76,7 +76,11 @@
 .mnone {
     margin: 0;
 }
-
+@-moz-document url-prefix() {
+  .doc__img{
+    bottom: 5.5px;
+  }
+}
 @media screen and (max-width: 1190px) {
     .doc {
         &-content {
