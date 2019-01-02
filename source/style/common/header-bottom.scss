@@ -20,6 +20,12 @@
 @media screen and (max-width: 1190px) {
 .header-bottom .header{
 	padding: 60px 0;
+  .header__woman {
+    bottom: -46px;
+  }
+  .header__prod {
+    top: 260px;
+  }
 }
 }
 
@@ -30,8 +36,9 @@
    	&:before,&:after{
    		display: none;
    	}
-   	.header__woman{
+   	.header__woman {
    		display: none;
+        
    	}
    	.header__prod{
    		top: 0;
