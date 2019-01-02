@@ -37,8 +37,8 @@
 		font-size: 17px;
 		color: #444;
 		max-width: 370px;
-		display: flex;
-		align-items: center;
+		// display: flex;
+		// align-items: center;
 
 		&::before {
 			content: '';
@@ -74,6 +74,8 @@
 
 	&__link-3 {
 		padding-left: 58px;
+		display: flex;
+		align-items: center;
 	}
 
 	&__link-1::before {
