@@ -264,7 +264,13 @@
         }
     }
 }
-
+.snoska{
+    
+    text-align: center;
+    .form__footnote{
+        margin-top: 5px !important;
+    }
+}
 @media screen and (max-width: 1190px) {
     .newlife {
         &-content {

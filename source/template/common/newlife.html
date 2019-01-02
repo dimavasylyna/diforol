@@ -40,7 +40,7 @@
 				<div class="newlife-newprice">
 					<div class="newlife-newprice__title">Новая цена</div>
 					<div class="newlife-newprice__value x_price_current">990</div>
-					<div class="newlife-newprice__current x_currency">руб.</div>
+					<div class="newlife-newprice__current "><span class="x_currency">руб</span>*</div>
 				</div>
 			</div>
 			 <form method="POST" action="/submit" class="newlife-form-box x_order_form">
@@ -50,12 +50,15 @@
 					<label class="form__label-tel form__label" for="newlifer__form-tel">
 						<input class="form__input form__input-tel" id="newlifer__form-tel" type="tel" name="phone" required autocomplete="tel" placeholder="Мой телефон">
 					</label>
+					<div class="snoska">
 					<button class="btn" type="submit">
 						<span>
 							Избавиться
 							<small class="btn__small">от проблем</small>
 						</span>
 					</button>
+					<p class="form__footnote">* при заказе курса</p>
+					</div>
 			 </form>
 		</div>
 	</div>

@@ -1,6 +1,6 @@
 .reviews {
     position: relative;
-    margin-top: -30px;
+   margin-top: -30px;
     padding-top: 94px;
     padding-bottom: 120px;
     background: url('../img/bg.png') no-repeat 50% 0;
@@ -9,17 +9,16 @@
     background-size: cover;
     z-index: 1;
 
-    &:before {
+     &:before {
         content: "";
         position: absolute;
         left: 50%;
-        background-size: cover;
+        transform: translate(-50%) rotate(-180deg);
         top: -1px;
         height: 20px;
         width: 2660px;
         background: url(../img/after-bg.svg) no-repeat center;
-        z-index: 1;
-        transform: translate(-50%) rotate(-180deg);
+        z-index: -1;
     }
 
     &:after {
@@ -101,7 +100,7 @@
                 font-size: 18px;
                 font-weight: 400;
                 line-height: 28px;
-                max-height: 304px;
+                max-height: 303px;
                 overflow: hidden;
                 transition: all 1s;
                 width: 370px;
@@ -278,6 +277,7 @@
                     padding-right: 12px;
                     line-height: 23px;
                     margin-top: 23px;
+                    max-height: 296px;
                   width: 278px;
                     br {
                         display: none;
@@ -309,6 +309,7 @@
 
                 &__text {
 width: 304px;
+max-height: 303px;
                     margin-top: 10px;
                 }
             }
