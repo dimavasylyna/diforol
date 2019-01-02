@@ -242,10 +242,10 @@
 	}
 	&__item-2 {
 		&::before {
-			transform: translateX(3px);
+			transform: translateX(-1px);
 		}
 		&::after {
-			transform: translateX(-4px) translateY(1px) rotate(45deg);
+			transform: translateX(-8px) translateY(1px) rotate(45deg);
 		}
 	}
 	&__item-3 {
