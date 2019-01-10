@@ -33,6 +33,7 @@
 @media (max-width: 1023px) {
    .header-bottom .header{
    	padding: 40px 0;
+    padding-bottom: 0;
    	&:before,&:after{
    		display: none;
    	}
@@ -49,12 +50,14 @@
 @media (max-width: 767px) {
   .header-bottom .header{
 	    padding: 30px 0;
+      padding-bottom: 0;
 }
 }
 
 @media screen and (max-width: 639px) {
    .header-bottom .header{
 	    padding: 46px 0 25px;
+     
 	    .container{
 	    	padding-bottom: 0;
 	    }

@@ -49,5 +49,10 @@ $('.reviews-content-box__cbtn').on('click', function () {
         }
       return false; 
     });
+
+
+
+    // animation
+    new WOW().init();
 });
 
