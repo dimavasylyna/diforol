@@ -327,7 +327,7 @@
             border: 3px solid #e4e4e4;
         }
         &-form{
-            width: 490px;
+            width: 555px;
             flex-direction: column;
             height: auto;
             margin-bottom: 0;
@@ -336,7 +336,7 @@
             margin-left: auto;
             margin-top: 30px;
             position: relative;
-            padding-left: 200px;
+            padding-left: 265px;
             padding-top: 30px;
             &-price{
                 margin-left: 0;
@@ -349,7 +349,7 @@
                 left: 30px;
                 top: 50%;
                 transform: translate(0,-50%);
-                width: 180px;
+                width: 250px;
                 height: auto
             }
             &-box{
@@ -447,9 +447,12 @@
         &-bsubtitle {}
         &-form{
             width: 460px;
-            margin-top: 25px;
+						margin-top: 25px;
+						padding-left: 200px;
             &-pack{
-                left: 20px;
+								left: 20px;
+								width: 190px;
+								
             }
         }
     }
