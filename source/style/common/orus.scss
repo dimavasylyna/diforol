@@ -505,7 +505,8 @@ border-color: #ffffff transparent transparent transparent;
 
 
             &-box {
-
+								margin-top: 15px;
+								margin-bottom: 15px;
 
                 &__text {}
 
@@ -527,7 +528,8 @@ border-color: #ffffff transparent transparent transparent;
 
         &-lock {
             width: 100%;
-            height: auto;
+						height: auto;
+						margin-top: 20px;
         }
     }
 }
