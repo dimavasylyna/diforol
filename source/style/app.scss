@@ -382,8 +382,8 @@ b {
 
 @media screen and (max-width: 639px) {
     .title {
-        font-size: 29px;
-        line-height: 29px;
+        font-size: 26px;
+        line-height: 26px;
     }
 
     .container {
@@ -497,6 +497,7 @@ border-radius: 5px;
         border: 1px solid #d9dadc;
         box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.05);
         width: 100%;
+        transition: 0.3s;
 
     }
 
@@ -504,7 +505,15 @@ border-radius: 5px;
         color: #202020;
         font-size: 17px;
     }
-
+    &__input:hover {
+        box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0),
+        1px 2px 5px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+    }
+    &__input:focus {
+        box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0),
+        1px 2px 5px rgba(0, 0, 0, 0.2);
+    }
     &__secure {
         padding-left: 30px;
         position: relative;
@@ -655,20 +664,26 @@ border-radius: 5px;
     border: none;
     width: 220px;
     height: 71px;
-    box-shadow: inset 0 0 10px rgba(247, 207, 123, 0.48), 0px 49px 144px -30px rgba(0,0,0,0.38);
+    box-shadow: inset 0 0 10px rgba(247, 207, 123, 0.48), 0px 19px 37px -26px rgba(0, 0, 0, 0.37);
     line-height: 22px;
     background-image: linear-gradient(to right, #82aa34 0%, #82aa34 1%, #8db838 50%, #82aa34 100%);
     border-bottom: 5px solid #749c27;
     padding-top: 3px;
+    transition: 0.1s;
     &__small {
         font-size: 17px;
         display: block;
     }
 
     &:hover {
-        box-shadow: inset 0 0 4px rgba(247, 207, 123, 0.48);
+        box-shadow: inset 0 0 4px rgba(247, 207, 123, 0.48), 0px 0px 0px 0px rgba(0, 0, 0, 0);
         background-color: #008064;
         background-image: linear-gradient(to right, #c2df89 0%, #c2df89 1%, #8db838 50%, #c0dc88 100%);
+        transition: 0.2s;
+    }
+    &:active {
+        border-bottom: 1px solid #749c27;
+        transition: 0.1s;
     }
 }
 

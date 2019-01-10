@@ -107,8 +107,8 @@
 
 @media screen and (max-width: 1190px) {
 	.days {
-		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-top: 25px;
+		padding-bottom: 42px;
 		&__subtitle {
 			margin-top: 0;
 			font-size: 21px;
@@ -235,6 +235,11 @@
 		}
 		&__item-1 {
 			margin-top: 20px;
+		}
+		&__item-2 {
+			.days__desc h3 br {
+				display: none;
+			}
 		}
 		&__img-block {
 			min-height: 110px;
